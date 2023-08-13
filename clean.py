@@ -31,6 +31,9 @@ for page in pages:
         ).replace(
             'Home',
             '主页'
+        ).replace(
+            '中国',
+            ''
         )
 
         html = re.sub(r'<div data-testid="header-countdown" class="css-1o9254d">\d+ Days To Go!</div>', '', html)
