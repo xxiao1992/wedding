@@ -30,5 +30,6 @@ for page in pages:
             'https://www.theknot.com/us/and-sep-2023-e66b44c6-66a7-486f-a2fe-67ab8f10bebe',
             'index.html'
         )
-
+        p.seek(0)
         p.write(html)
+        p.truncate()
