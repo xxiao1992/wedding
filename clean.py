@@ -23,11 +23,11 @@ for page in pages:
             'https://www.theknot.com/us/and-sep-2023-e66b44c6-66a7-486f-a2fe-67ab8f10bebe',
             'index.html'
         ).replace(
-            'SEPTEMBER',
-            '九月'
+            'SEPTEMBER ',
+            '9.'
         ).replace(
-            'September',
-            '九月'
+            'September ',
+            '9.'
         ).replace(
             'Home',
             '主页'
