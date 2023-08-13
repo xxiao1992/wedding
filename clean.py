@@ -1,5 +1,6 @@
 import os
-import codecs
+import re
+
 
 pages = [x for x in os.listdir() if x.endswith('html')]
 
@@ -27,8 +28,14 @@ for page in pages:
         ).replace(
             'September',
             '九月'
+        ).replace(
+            'Home',
+            '主页'
         )
-        
+
+        html = re.sub(r'<div data-testid="header-countdown" class="css-1o9254d">\d+ Days To Go!</div>', '', html)
+
+
         p.seek(0)
         p.write(html)
         p.truncate()
