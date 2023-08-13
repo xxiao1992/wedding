@@ -24,6 +24,9 @@ for page in pages:
         ).replace(
             'SEPTEMBER',
             '九月'
+        ).replace(
+            'September',
+            '九月'
         )
         
         p.seek(0)
